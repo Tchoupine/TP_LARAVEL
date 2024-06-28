@@ -7,18 +7,18 @@ use Illuminate\Http\Request;
 class PageController extends Controller
 {
     public function index(){
-        return view('index');
+        return view('sections.index');
     }
 
     public function table(){
-        return view('freelancer.table');
+        return view('freelancer.table.index');
     }
 
     public function formulaire(){
-        return view('freelancer.formulaire');
+        return view('freelancer.formulaire.index');
     }
 
     public function details(){
-        return view('freelancer.details');
+        return view('freelancer.details.index');
     }
 }

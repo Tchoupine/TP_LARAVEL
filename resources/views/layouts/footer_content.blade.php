@@ -1,5 +1,4 @@
-<footer class="footer">
-    <div class="footer-top ">
+<div class="footer-top ">
     <div class="container">
     <div class="row">
     <div class=" col-lg-4 col-md-12">
@@ -80,26 +79,3 @@
     </div>
     </div>
     </div>
-
-
-    <div class="footer-bottom">
-    <div class="container">
-
-    <div class="copyright">
-    <div class="row">
-    <div class="col-md-12">
-    <div class="copyright-text text-center">
-    <p class="mb-0">&copy;KofeJob. All right reserved.</p>
-    </div>
-    </div>
-    </div>
-    </div>
-
-    </div>
-    </div>
-
-</footer>
-
-<button class="scroll-top scroll-to-target" data-target="html">
-<span class="ti-angle-up"><img src="assets/img/icon/top-icon.svg" class="img-fluid" alt="Img"></span>
-</button>

@@ -8,4 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Freelancer extends Model
 {
     use HasFactory;
+    protected $freelancer=[
+            'First Name',
+            'Last Name',
+            'Phone Number',
+            'Email Address',
+            'Address',
+            'Contry', 
+            'City', 
+            
+    ];
 }

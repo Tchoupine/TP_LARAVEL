@@ -22,5 +22,5 @@ Route::get('/formulaire', [PageController::class, 'formulaire'])->name('formulai
 
 
 Route::get('/', function () {
-    return view('index');
+    return view('sections/index');
 });

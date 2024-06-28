@@ -1,45 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('freelancer.formulaire.layouts.app')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-    <title>KofeJob</title>
-
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
-    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
-
-    <link rel="stylesheet" href="assets/plugins/feather/feather.css">
-
-    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
-
-    <link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css">
-
-    <link rel="stylesheet" href="assets/plugins/datatables/datatables.min.css">
-
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body class="dashboard-page">
-
-<div class="main-wrapper">
-
-@include('layouts.header')
-
-
-@include('layouts.menu')
-
-<!--formulaire-->
+@section('content_formulaire')
 <div class="col-xl-9 col-lg-8">
     <div class="pro-pos">
     <div class="setting-content employee-profile-new">
     <form action="https://kofejob.dreamstechnologies.com/html/template/profile-settings.html">
     <div class="card">
     <div class="pro-head">
-    <h3>Profile Setting</h3>
     </div>
     <div class="pro-body">
     <div class="row">
@@ -99,43 +66,28 @@
     </div>
     </div>
     </div>
-    <div class="col-lg-12">
-    <div class="mb-3">
-    <label class="form-label">Address</label>
-    <input type="text" class="form-control">
-    </div>
+    <div class="col-lg-6 col-md-12">
+        <div class="mb-3">
+        <label class="form-label">Country</label>
+        <select class="select">
+        <option value>Select</option>
+        <option value>UK</option>
+        <option value>USA</option>
+        </select>
+        </div>
     </div>
     <div class="col-lg-6 col-md-12">
-    <div class="mb-3">
-    <label class="form-label">Country</label>
-    <select class="select">
-    <option value>Select</option>
-    <option value>UK</option>
-    <option value>USA</option>
-    </select>
+        <div class="mb-3">
+        <label class="form-label">City</label>
+        <select class="select">
+        <option value>Select</option>
+        <option value>UK</option>
+        <option value>USA</option>
+        </select>
+        </div>
     </div>
-    </div>
-    <div class="col-lg-6 col-md-12">
-    <div class="mb-3">
-    <label class="form-label">State</label>
-    <select class="select">
-    <option value>Select</option>
-    <option value>UK</option>
-    <option value>USA</option>
-    </select>
-    </div>
-    </div>
-    <div class="col-lg-6 col-md-12">
-    <div class="mb-3">
-    <label class="form-label">City</label>
-    <select class="select">
-    <option value>Select</option>
-    <option value>UK</option>
-    <option value>USA</option>
-    </select>
-    </div>
-    </div>
-    <div class="col-lg-6 col-md-12">
+    
+    {{-- <div class="col-lg-6 col-md-12">
     <div class="mb-3">
     <label class="form-label">Zipcode</label>
     <input type="text" class="form-control">
@@ -560,7 +512,7 @@
     </div>
     </div>
     </div>
-    </div>
+    </div> --}}
     <div class="card text-end border-0">
     <div class="pro-body">
     <button class="btn btn-secondary click-btn btn-plan">Cancel</button>
@@ -571,37 +523,24 @@
     </div>
     </div>
 </div>
-<!--/formulaire-->
+@endsection
 
-</div>
-</div>
-</div>
+@section('js')
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery-3.7.1.min.js" type="1844f759bf01818f16cd74e0-text/javascript"></script>
 
+    <script src="assets/js/bootstrap.bundle.min.js" type="1844f759bf01818f16cd74e0-text/javascript"></script>
 
-@include('layouts.footer')
+    <script src="assets/plugins/select2/js/select2.min.js" type="1844f759bf01818f16cd74e0-text/javascript"></script>
 
-</div>
+    <script src="assets/js/moment.min.js" type="1844f759bf01818f16cd74e0-text/javascript"></script>
+    <script src="assets/js/bootstrap-datetimepicker.min.js" type="1844f759bf01818f16cd74e0-text/javascript"></script>
 
-<!--js-->
-<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery-3.7.1.min.js" type="1844f759bf01818f16cd74e0-text/javascript"></script>
+    <script src="assets/plugins/datatables/jquery.dataTables.min.js" type="1844f759bf01818f16cd74e0-text/javascript"></script>
+    <script src="assets/plugins/datatables/datatables.min.js" type="1844f759bf01818f16cd74e0-text/javascript"></script>
 
-<script src="assets/js/bootstrap.bundle.min.js" type="1844f759bf01818f16cd74e0-text/javascript"></script>
+    <script src="assets/plugins/theia-sticky-sidebar/ResizeSensor.js" type="1844f759bf01818f16cd74e0-text/javascript"></script>
+    <script src="assets/plugins/theia-sticky-sidebar/theia-sticky-sidebar.js" type="1844f759bf01818f16cd74e0-text/javascript"></script>
 
-<script src="assets/plugins/select2/js/select2.min.js" type="1844f759bf01818f16cd74e0-text/javascript"></script>
-
-<script src="assets/js/moment.min.js" type="1844f759bf01818f16cd74e0-text/javascript"></script>
-<script src="assets/js/bootstrap-datetimepicker.min.js" type="1844f759bf01818f16cd74e0-text/javascript"></script>
-
-<script src="assets/plugins/datatables/jquery.dataTables.min.js" type="1844f759bf01818f16cd74e0-text/javascript"></script>
-<script src="assets/plugins/datatables/datatables.min.js" type="1844f759bf01818f16cd74e0-text/javascript"></script>
-
-<script src="assets/plugins/theia-sticky-sidebar/ResizeSensor.js" type="1844f759bf01818f16cd74e0-text/javascript"></script>
-<script src="assets/plugins/theia-sticky-sidebar/theia-sticky-sidebar.js" type="1844f759bf01818f16cd74e0-text/javascript"></script>
-
-<script src="assets/js/script.js" type="1844f759bf01818f16cd74e0-text/javascript"></script>
-<script src="../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="1844f759bf01818f16cd74e0-|49" defer></script>
-<!--/js-->
-
-</body>
-
-</html>
+    <script src="assets/js/script.js" type="1844f759bf01818f16cd74e0-text/javascript"></script>
+    <script src="../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="1844f759bf01818f16cd74e0-|49" defer></script>
+@endsection
