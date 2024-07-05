@@ -11,15 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('_freelancer', function (Blueprint $table) {
+        Schema::create('freelancer', function (Blueprint $table) {
             $table->id();
-            $table->string('first_name'); // First Name
-            $table->string('last_name');  // Last Name
-            $table->string('phone_number'); // Phone Number
-            $table->string('email_address')->unique(); // Email Address
-            $table->text('address'); // Address
-            $table->string('country'); // Country
-            $table->string('city'); // City
+            $table->string('first_name'); 
+            $table->string('last_name');  
+            $table->string('phone_number'); 
+            $table->string('email_address')->unique(); 
+            $table->text('address'); 
+            $table->string('country'); 
+            $table->string('city'); 
             $table->timestamps();
         });
     }

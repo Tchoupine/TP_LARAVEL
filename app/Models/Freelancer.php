@@ -18,4 +18,6 @@ class Freelancer extends Model
             'City', 
             
     ];
+
 }
+

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CrudController;
 use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,6 +20,8 @@ Route::get('/table', [PageController::class, 'table'])->name('table');
 Route::get('/home', [PageController::class, 'index'])->name('home');
 Route::get('/details', [PageController::class, 'details'])->name('details');
 Route::get('/formulaire', [PageController::class, 'formulaire'])->name('formulaire');
+Route::resource('/freelancer', CrudController::class);
+
 
 
 Route::get('/', function () {

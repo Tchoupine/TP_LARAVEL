@@ -5,7 +5,7 @@
     <div class="row">
     <div class="col-md-12">
     <div class="copyright-text text-center">
-    <p class="mb-0">Copyright 2024 © KofeJob. All right reserved.</p>
+    <p class="mb-0">2024 &copy; KofeJob. All right reserved.</p>
     </div>
     </div>
     </div>
