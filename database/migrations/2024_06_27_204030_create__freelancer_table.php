@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('freelancer', function (Blueprint $table) {
+        Schema::create('freelancers', function (Blueprint $table) {
             $table->id();
             $table->string('first_name'); 
             $table->string('last_name');  
@@ -20,6 +20,8 @@ return new class extends Migration
             $table->text('address'); 
             $table->string('country'); 
             $table->string('city'); 
+            $table->string('profile');
+            $table->string('cv');
             $table->timestamps();
         });
     }
@@ -29,6 +31,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('_freelancer');
+        Schema::dropIfExists('freelancers');
     }
 };

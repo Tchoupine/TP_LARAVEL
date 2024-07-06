@@ -8,16 +8,18 @@ use Illuminate\Database\Eloquent\Model;
 class Freelancer extends Model
 {
     use HasFactory;
-    protected $freelancer=[
-            'First Name',
-            'Last Name',
-            'Phone Number',
-            'Email Address',
-            'Address',
-            'Contry', 
-            'City', 
-            
+    protected $fillable = [
+        'first_name',
+        'last_name',
+        'phone_number',
+        'email_address',
+        'address',
+        'country',
+        'city',
+        'profile',
+        'cv',
     ];
+    
 
 }
 
